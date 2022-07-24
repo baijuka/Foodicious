@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodicious</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container-fluid" id="home">
+      <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="#">Foodicious</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#order">Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Non-Veg</a></li>
+                  <li><a class="dropdown-item" href="#">Vegetarian</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Beverages</a></li>
+                  <li><a class="dropdown-item" href="#">Deserts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Carousel-->
+      <div style="height: 750px;" class="d-none d-sm-block">
+        <div id="carouselExampleCaptions " class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/image1.jpg" class="slide d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Non-Veg Dishes</h2>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image2.jpg" class="slide d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Chinese Selections</h2>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/image3.jpg" class="slide d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Continental couisine</h2>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+     
+  
+      <!-- Order Section -->
+      
+      <div class="container my-4" id="order">
+        <h1 class="text-center pt-5 pt-sm-0">Place your order</h1>
+        <div class="row justify-content-evenly">
+          <div class="col-auto g-3">
+            <div class="card text-center" style="width: 18rem; height: 30rem;">
+              <img src="./images/indian1.jpg" class="card-img-top item-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Biryani</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger">£6.99</h5>
+                <a href="#" class="btn btn-primary mt-3">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto g-3">
+            <div class="card text-center" style="width: 18rem; height: 30rem;">
+              <img src="./images/indian2.jpg" class="card-img-top item-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Curry</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger">£5.99</h5>
+                <a href="#" class="btn btn-primary mt-3">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto g-3">
+            <div class="card text-center" style="width: 18rem; height: 30rem;">
+              <img src="./images/chinese1.jpg" class="card-img-top item-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken Rice</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger">£7.99</h5>
+                <a href="#" class="btn btn-primary mt-3">Order now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-auto g-3">
+            <div class="card text-center" style="width: 18rem; height: 30rem;">
+              <img src="./images/chinese2.jpg" class="card-img-top item-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Noodles</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger">£4.99</h5>
+                <a href="#" class="btn btn-primary mt-3">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto g-3">
+            <div class="card text-center" style="width: 18rem; height: 30rem;">
+              <img src="./images/cont1.jpg" class="card-img-top item-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken and Rice Enchiladas</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger">£8.99</h5>
+                <a href="#" class="btn btn-primary mt-3">Order now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto g-3">
+            <div class="card text-center" style="width: 18rem; height: 30rem;">
+              <img src="./images/cont2.jpg" class="card-img-top item-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Burritos</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title text-danger">£4.99</h5>
+                <a href="#" class="btn btn-primary mt-3">Order now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer -->
+      <div class="container-fluid bg-warning" id="footer">
+        <div class="row text-center pt-3">
+          <div class="col">
+            <h5>Location</h5>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col-6">
+            <h3 class="text-white">Foodicious</h3>
+            <h6>12 Corporation Street</h5>
+            <h6>Newport</h5>
+            <h6>NP00 6TT</h5>
+            <p>Phone: 02345441124</p>
+            <p>Email: order@fudicious.com</p>
+          </div>
+          <div class="col-6 text-end">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.190194370207!2d-2.9965875263841166!3d51.58543964014844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871e6c7d0d1e335%3A0x5842ab47f48cb383!2sKingsway%20Shopping%20Centre!5e0!3m2!1sen!2suk!4v1658655815013!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+  </body>
+</html>

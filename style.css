@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img.slide {
+    height: 700px;
+    width: 100%;
+}
+
+img.item-img {
+    height: 200px;
+}
